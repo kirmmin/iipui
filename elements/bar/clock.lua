@@ -54,7 +54,7 @@
 	bar.clock.UpdateSize = function ()
 		local var = IIP_VAR['clock']
 		local font, fontSize = bar.clock.t:GetFont()
-		bar.clock.t:SetFont(font, var.fontsize == 'small' and 10 or var.fontsize == "medium" and 13 or var.fontsize == "large" and 15)
+		bar.clock.t:SetFont(font, var.fontsize == 'small' and 10 or var.fontsize == "medium" and 12 or var.fontsize == "large" and 14)
 	end
 
 	for _, e in pairs(events) do
