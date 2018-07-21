@@ -232,6 +232,11 @@
 		Portrait.vehicle:SetPoint('RIGHT', self, 82, 0)
 		Portrait.vehicle:SetTexCoord(.59, .66, .49, .56)
 
+		Portrait.feedback = self.Health:CreateFontString(nil, 'OVERLAY', NumberFontNormalHuge)
+		Portrait.feedback:SetFont(STANDARD_TEXT_FONT, 20, 'OUTLINE')
+		Portrait.feedback:SetPoint('CENTER', Portrait)
+		CombatFeedback_Initialize(Portrait, Portrait.feedback, 20)
+
 		self.Border  = {}
 
 		self.Border.left = self:CreateTexture(nil, 'OVERLAY')

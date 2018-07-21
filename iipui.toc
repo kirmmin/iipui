@@ -3,7 +3,7 @@
 ## Author: modernist
 ## Dependencies: oUF
 ## OptionalDeps: Clique
-## SavedVariables: iipAlwaysActionBar, iipCombatActionBar, iipRaidLayout, iipRaidX, iipRaidY, IIP_VAR
+## SavedVariables: iipRaidLayout, iipRaidX, iipRaidY, IIP_VAR
 ## X-credits: haste, lyn
 ## Notes: a ui
 
@@ -19,6 +19,7 @@ core\plugins\NoTaint_UIDropDownMenu\UIDropDownMenuTemplates.xml
 core\plugins\NoTaint_UIDropDownMenu\UIDropDownMenu.lua
 core\plugins\NoTaint_UIDropDownMenu\EasyMenu.lua
 core\plugins\oUF_Smooth\oUF_Smooth.lua
+core\plugins\oUF_FloatingCombatFeedback\oUF_FloatingCombatFeedback.lua
 
 #  ~insert templates
 templates.xml
