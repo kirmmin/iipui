@@ -299,7 +299,7 @@
 
             rest:SetMinMaxValues(min(0, XP), max)
             rest:SetValue(REST and (XP + REST) or 0)
-            xp.data:SetFormattedText(percent..'%% xp')
+            xp.data:SetFormattedText(XP.."/"..max.." - "..percent..'%% xp')
         end
     end
 

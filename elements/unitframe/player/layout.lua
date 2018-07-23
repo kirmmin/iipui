@@ -272,7 +272,8 @@
 		ns.BD(Castbar)
 		ns.CLASS_COLOUR(Castbar)
 		Castbar:ClearAllPoints()
-		Castbar:SetPoint('BOTTOM', UIParent, 0, 270)
+		Castbar:SetPoint('BOTTOM', UIParent, 0, UnitExists'pet' and 270 or 200)
+		-- iipPetBar:IsShown() and 270 or
 		Castbar:SetSize(136, 8)
 		Castbar.timeToHold = .4
 

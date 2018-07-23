@@ -65,11 +65,12 @@ elements\bar\zone.lua
 #
 elements\boss\warnings.lua
 #
-elements\chat\chat.lua
+elements\chat\chat-simple.lua
+#elements\chat\chat.lua
 elements\chat\cmd.lua
-elements\chat\event.lua
-elements\chat\tab.lua
-elements\chat\url.lua
+#elements\chat\event.lua
+#elements\chat\tab.lua
+#elements\chat\url.lua
 #
 elements\gossip\gossip.lua
 #

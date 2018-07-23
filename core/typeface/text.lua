@@ -48,7 +48,7 @@
 	for n, v in pairs(strings) do
 		if n == 'zone' or n == 'warnings' then
 			iterate(v, function(t)
-				t:SetFont([[Fonts\skurri.ttf]], 14)
+				t:SetFont([[Fonts\skurri.ttf]], 20)
 				t:SetShadowOffset(1, -1.25)
 				t:SetShadowColor(0, 0, 0, 1)
 			end)
@@ -58,14 +58,14 @@
 				t:SetShadowOffset(1, -1.25)
 				t:SetShadowColor(0, 0, 0, 1)
 			end)
-		elseif n == 'toast' then
-			iterate(v, function(t)
-				if t == BNToastFrameTopLine then t:SetJustifyH'CENTER' end
-				t:SetFont(t == BNToastFrameTopLine and FONT_BOLD or FONT_REGULAR,
-						  t == BNToastFrameTopLine and 13 or 10)
-				t:SetShadowOffset(1, -1.25)
-				t:SetShadowColor(0, 0, 0, 1)
-			end)
+		-- elseif n == 'toast' then
+		-- 	iterate(v, function(t)
+		-- 		if t == BNToastFrameTopLine then t:SetJustifyH'CENTER' end
+		-- 		t:SetFont(t == BNToastFrameTopLine and FONT_BOLD or FONT_REGULAR,
+		-- 				  t == BNToastFrameTopLine and 13 or 10)
+		-- 		t:SetShadowOffset(1, -1.25)
+		-- 		t:SetShadowColor(0, 0, 0, 1)
+		-- 	end)
 		elseif n == 'tooltip' then
 			iterate(v, function(t)
 				t:SetFont([[Fonts\skurri.ttf]], 13)

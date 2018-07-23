@@ -55,7 +55,7 @@
             f.i:SetTexCoord(.2, .8, .25, .75)
 
             f.t = f:CreateFontString(nil, 'OVERLAY', 'GameFontHighlightSmall')
-            f.t:SetFont(STANDARD_TEXT_FONT, 9)
+            f.t:SetFont(STANDARD_TEXT_FONT, 12)
             f.t:SetPoint('LEFT', f, 'RIGHT', 6, 0)
             f.t:SetFormattedText(ORDER_HALL_COMMANDBAR_CATEGORY_COUNT, v.count, v.limit)
 
@@ -102,7 +102,7 @@
             f.i:SetTexture(texture and texture or '')
 
             f.t = f:CreateFontString(nil, 'OVERLAY', 'GameFontHighlightSmall')
-            f.t:SetFont(STANDARD_TEXT_FONT, 9)
+            f.t:SetFont(STANDARD_TEXT_FONT, 12)
             f.t:SetPoint('LEFT', f, 'RIGHT', 5, 0)
             f.t:SetText(ranks and ranks or '')
         end
@@ -141,11 +141,11 @@
             bar.ClassIcon:Hide()
 
             ns.CLASS_COLOUR(bar.AreaName)
-            bar.AreaName:SetFont([[Fonts\skurri.ttf]], 12)
+            bar.AreaName:SetFont([[Fonts\skurri.ttf]], 14)
             bar.AreaName:ClearAllPoints()
             bar.AreaName:SetPoint('TOP', bar, 0, -1)
 
-            bar.Currency:SetFont(STANDARD_TEXT_FONT, 9)
+            bar.Currency:SetFont(STANDARD_TEXT_FONT, 12)
             bar.Currency:ClearAllPoints()
             bar.Currency:SetPoint('TOPLEFT', bar, 75, -2)
 
