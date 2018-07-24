@@ -15,6 +15,7 @@
 			num			= 10,
 			padding		= 20,
 			positions 	= {'BOTTOM', UIParent, 'BOTTOM', -4, 190},
+			visibility = '[vehicleui][petbattle][overridebar][possessbar] hide; show',
 			size		= 30,
 		}
 	}
@@ -239,6 +240,8 @@
 
 		bar:SetSize(((t.size + t.padding)*t.num) - t.padding, t.size)
 
+		RegisterStateDriver(bar, 'visibility', bars['bar6'].visibility)
+
 		bar.Update 		= Update
 
 		for i = 1, bars['bar6'].num do
@@ -293,7 +296,7 @@
 			check:ClearAllPoints()
 			check:SetPoint('TOPLEFT', button, -18, 18)
 			check:SetPoint('BOTTOMRIGHT', button, 18, -18)
-			check:SetTexCoord(0, .18, .805, 1)
+			check:SetTexCoord(0, .18, .81, 1)
 
 			for _, v in pairs(
 				{
